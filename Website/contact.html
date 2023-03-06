@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact</title>
+	<meta charset="UTF-8">
+	<link href="stylesmall.css" type = "text/css" rel = "stylesheet" media="screen and (max-width: 1500px)">
+    <link href="style.css" type = "text/css" rel = "stylesheet" media="screen and (min-width: 1500px)">
+	<script defer src="scriptcontact.js"></script>
+</head>
+
+<body>
+<header class="container">
+	<img class="headerlogo" src="Logo.png" alt="logo"/>
+	
+	<p>
+	
+		<a href="https://www.facebook.com/"><img id ="fbicon" src = "facebook.png" alt="fb"></a>
+		<a href="https://www.instagram.com/"><img src = "insta.png" alt="insta"></a>
+		<a href="https://www.twitter.com/"><img src = "twitter.png" alt="tw"></a>
+	
+	</p>
+
+	<div class="clear"></div>
+	
+	<div class="headerline"></div>
+	
+</header>
+
+<nav>
+	<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="best.html">Our best invention</a></li>
+
+			<li>
+			<div class="dropdown">
+				<a class="dropbtn" href="products.html">Products</a>
+				<div class="dropdown-content">
+					<a href="products.html#link1">Scooters</a>
+					<a href="products.html#link2">Bicycles</a>
+					<a href="products.html#link3">Skateboards</a>
+				</div>
+			  </div>
+			</li>
+
+			<li><a class="current" href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+
+<br><br><br>
+
+<div class="container">
+
+<h1>Our Showroom</h1>
+
+<br><br>
+
+<div class="fleft" style="margin-right: 150px; margin-left: 50px;">
+
+	<div style="overflow:hidden;width: 1000px;position: relative;"><iframe width="1000" height="640" src="https://maps.google.com/maps?width=1000&amp;height=640&amp;hl=en&amp;q=university%20of%20bucharest+(Uni)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+		</div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+
+<!-- <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:650px;width:1000px;'>
+<div id='gmap_canvas' style='height:450px;width:750px;'></div><div><small><a href="http://embedgooglemaps.com">
+Click here to generate your map!</a></small></div><div><small><a href="http://www.genkigirl.net/">
+alternative to airbnb website</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}
+</style></div><script type='text/javascript'>function init_map(){var myOptions =
+ {zoom:10,center:new google.maps.LatLng(44.46136787670226,26.099788191349624),mapTypeId: google.maps.MapTypeId.ROADMAP};map
+ = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position:
+ new google.maps.LatLng(44.46136787670226,26.099788191349624)});infowindow = new google.maps.InfoWindow({content
+ :'<strong>Address</strong><br>Strada Banul Antonache 40-44, Bucharest, Romania<br>'});google.maps.event.addListener(marker,
+ 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window,
+ 'load', init_map);
+</script>	 -->
+	
+</div>
+	
+<form name="myform" action="/action_page.php" onsubmit="validareForm()" method="post">
+
+<input type="text" name="name" placeholder="Name" required>
+
+<br><br>
+
+<input type="tel" name="telephone" placeholder="Telephone" required>
+
+<br><br>
+
+<input type="email" name="email" placeholder="Email" required>
+
+<br><br>
+
+<input type="text" name="address" placeholder="Address" required>
+
+<br><br>
+
+<label for="cars">Your choice: </label>
+  <select id="product" name="product">
+    <option value="onewheel">Onewheel+</option>
+    <option value="scooter">Scooter</option>
+    <option value="bicycle">Bicycle</option>
+    <option value="skateboard">Skateboard</option>
+  </select>
+
+<br><br>
+
+<input type="number" name="quantity" min="1" max="5" placeholder="Qty" required>
+
+<br><br>
+
+<input type="date" name="Delivery date">
+
+<br><br>
+
+<textarea form="myform" rows="6" cols="20" placeholder="Additional information"></textarea>
+
+<br><br>
+
+<input type="reset" value="Clear">
+
+<br><br>
+
+<input type="submit" value="Submit">
+
+<br><br>
+
+</form>
+
+</div>
+
+</body>
+</html>
